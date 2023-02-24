@@ -1,0 +1,16 @@
+    QUESTION 1
+    SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;
+
+    QUESTION 2
+    SELECT DISTINCT CITY FROM STATION WHERE upper(SUBSTR(CITY,1,1)) NOT IN ('A','E','I','O','U') AND lower(SUBSTR(CITY,1,1)) NOT IN
+('a','e','i','o','u'); 
+
+    QUESTION 3
+   SELECT Name FROM STUDENTS WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID;
+
+    QUESTION 4
+    select main.name from
+    (select employee_id, name from employee where salary>2000 and months<10 order by employee_id asc) as main;
+
+    QUESTION 5
+    SELECT * FROM CITY;
